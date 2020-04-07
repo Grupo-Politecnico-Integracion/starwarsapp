@@ -16,7 +16,9 @@ Al clonar el proyecto, tener en cuenta que se debe actualizar nmp
 
 Finalmente correr el `ng serve` 
 
-Si es necesario se debe deshabilitar la restricción de scripts en windows para que el ng funcione
+Si es necesario se debe deshabilitar la restricción de scripts en windows para que el ng funcione.
+
+
 
 
 
