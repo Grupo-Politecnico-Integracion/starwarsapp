@@ -18,8 +18,3 @@ Finalmente correr el `ng serve`
 
 Si es necesario se debe deshabilitar la restricción de scripts en windows para que el ng funcione.
 
-
-
-
-
-
