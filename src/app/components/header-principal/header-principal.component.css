@@ -1,16 +1,51 @@
+.principal_header
+{
+	height: 30%;
+	width: 70%;
+	vertical-align: center;
+	margin-left: 15%;
+	margin-right: 15%;
+}
+
 .div_header 
 {
 	display: table-cell;
 	vertical-align: middle;
-	text-align: center;
 	background-color: transparent;
+	margin: 0px;
+}
+
+#div_search_menu
+{
+	width: 70%;
+}
+
+/*Estilos para el Logo principal*/
+#div_logo
+{
+	width: 30%;
+	height: 100%;
+}
+
+#logo_principal
+{
+	width: 100%;
+	height: 70%;
+	margin:0px;
 }
 
 /*Estilos de la barra de consulta*/
+#div_search
+{
+	height: 50%;
+}
+
 .search_section
 {
 	background: transparent;
 	text-align: center;
+	width: 100%;
+	height: 100%;
 }
 
 .search_section:before,
@@ -103,7 +138,7 @@
 	color: #fff;
 	display: block;
 	float: left;
-	font-family: 'Cabin', helvetica, arial, sans-serif;
+	font-family: 'Cabin', helvetica, arial, sans-serif; 
 	font-size: 13px;
 	font-weight: 400;
 	height: 40px;
@@ -181,4 +216,10 @@
 		border-color: #6f6;
 		box-shadow: 0 0 20px rgba(0,255,0,.6), inset 0 0 10px rgba(0,255,0,.4), 0 2px 0 #000;
     }
+}
+
+/*Estilos para el menu de navegacion*/
+#div_menu
+{
+	height: 50%;
 }
