@@ -1,0 +1,54 @@
+@font-face
+{
+	font-family: starjedilines;
+	src: url("./../../../assets/fonts/font-starjedi-lines.ttf");
+}
+
+.principal_footer
+{
+	height: 5%;
+	width: 70%;
+	margin-left: 15%;
+	margin-right: 15%;
+	text-align: center;
+	font-family: starjedilines;
+	font-size: 13px;
+	color: #FFDE06;
+}
+
+hr
+{
+	border-color: #FFDE06;
+}
+
+#div_img
+{
+	width: 30%;
+	padding: 3 3 3 0px;
+	margin-right: 2px;
+}
+
+#div_info_poli
+{
+	width: 69%;
+	text-align: center;
+	font-family: starjedilines;
+	font-size: 13px;
+	color: #FFDE06;
+	letter-spacing: 0.20em;
+	padding: 3 0 3 3px;
+	margin-left: 2px;
+}
+
+#div_info_poli, #div_img
+{
+	display: inline-block;
+	height: 100%;
+	vertical-align: middle;
+}
+
+#img_poli
+{
+	height: 100%;
+	width: 100%;
+}
