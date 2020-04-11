@@ -5,6 +5,7 @@
 	vertical-align: center;
 	margin-left: 15%;
 	margin-right: 15%;
+	margin-top: 3%;
 }
 
 .div_header 
@@ -17,9 +18,41 @@
 
 #div_search_menu
 {
+	display: table-cell;
+	vertical-align: middle;
 	width: 70%;
+	margin: 0 0 0 0px;
+	padding: 0 0 0 0px;
+	border: 0px;
 }
 
+hr
+{
+	border-color: #FFDE06;
+}
+
+/*****************************************************************************************************************/
+/*Estilos para las tipografias del header*/
+@font-face
+{
+	font-family: anakimono;
+	src: url("./../../../assets/fonts/font-anakimono.ttf");
+}
+
+@font-face
+{
+	font-family: starjedi;
+	src: url("./../../../assets/fonts/font-starjedi.ttf");
+}
+
+@font-face
+{
+	font-family: starjedilines;
+	src: url("./../../../assets/fonts/font-starjedi-lines.ttf");
+}
+
+
+/*****************************************************************************************************************/
 /*Estilos para el Logo principal*/
 #div_logo
 {
@@ -30,10 +63,11 @@
 #logo_principal
 {
 	width: 100%;
-	height: 70%;
+	height: 90%;
 	margin:0px;
 }
 
+/*****************************************************************************************************************/
 /*Estilos de la barra de consulta*/
 #div_search
 {
@@ -65,31 +99,32 @@
 
 .search_section form {
 	background: transparent;
-	border: 1px solid #000;
+	border: 0px solid transparent;
 	border-radius: 5px;
 	box-shadow: inset 0 0 0 1px #272727;
 	display: inline-block;
 	font-size: 0px;
 	position: relative;
 	z-index: 1;
+	width: 100%;
+	margin: 5px;
 }
 
 .search_section input {
 	background: transparent;
-	border: 1px solid #444;
+	border: 2px solid #6f6;
 	border-radius: 5px 0 0 5px;
 	box-shadow: 0 2px 0 #000;
 	color: #888;
 	display: block;
 	float: left;
-	font-family: 'Cabin', helvetica, arial, sans-serif;
-	font-size: 13px;
+	font-family: anakimono ;
+	font-size: 15px;
 	font-weight: 400;
-	height: 40px;
-	margin: 0;
+	height: 44px;
 	padding: 0 10px;
 	text-shadow: 0 -1px 0 #000;
-	width: 200px;
+	width: 80%;
 }
 
 .ie .search_section input {
@@ -131,23 +166,23 @@
 	-o-box-sizing: content-box;
 	-ms-box-sizing: content-box;
 	box-sizing: content-box;
-	border: 1px solid #444;
+	border: 2px solid #6f6;
 	border-left-color: #000;
 	border-radius: 0 5px 5px 0;
 	box-shadow: 0 2px 0 #000;
-	color: #fff;
+	color: #888;
 	display: block;
 	float: left;
-	font-family: 'Cabin', helvetica, arial, sans-serif; 
-	font-size: 13px;
+	font-family: anakimono; 
+	font-size: 15px;
 	font-weight: 400;
-	height: 40px;
+	height: 100%;
 	line-height: 40px;
 	margin: 0;
 	padding: 0;
 	position: relative;
 	text-shadow: 0 -1px 0 #000;
-	width: 80px;
+	width: 19%;
 }	
 
 .search_section button:hover,
@@ -165,61 +200,77 @@
 
 @-webkit-keyframes glow {
     0% {
-		border-color: #393;
+		border-color: #6f6;
 		box-shadow: 0 0 5px rgba(0,255,0,.2), inset 0 0 5px rgba(0,255,0,.1), 0 2px 0 #000;
     }	
     100% {
-		border-color: #6f6;
+		border-color: #FFDE06;
 		box-shadow: 0 0 20px rgba(0,255,0,.6), inset 0 0 10px rgba(0,255,0,.4), 0 2px 0 #000;
     }
 }
 
 @-moz-keyframes glow {
     0% {
-		border-color: #393;
+		border-color: #6f6;
 		box-shadow: 0 0 5px rgba(0,255,0,.2), inset 0 0 5px rgba(0,255,0,.1), 0 2px 0 #000;
     }	
     100% {
-		border-color: #6f6;
+		border-color: #FFDE06;
 		box-shadow: 0 0 20px rgba(0,255,0,.6), inset 0 0 10px rgba(0,255,0,.4), 0 2px 0 #000;
     }
 }
 
 @-o-keyframes glow {
     0% {
-		border-color: #393;
+		border-color: #6f6;
 		box-shadow: 0 0 5px rgba(0,255,0,.2), inset 0 0 5px rgba(0,255,0,.1), 0 2px 0 #000;
     }	
     100% {
-		border-color: #6f6;
+		border-color: #FFDE06;
 		box-shadow: 0 0 20px rgba(0,255,0,.6), inset 0 0 10px rgba(0,255,0,.4), 0 2px 0 #000;
     }
 }
 
 @-ms-keyframes glow {
     0% {
-		border-color: #393;
+		border-color: #6f6;
 		box-shadow: 0 0 5px rgba(0,255,0,.2), inset 0 0 5px rgba(0,255,0,.1), 0 2px 0 #000;
     }	
     100% {
-		border-color: #6f6;
+		border-color: #FFDE06;
 		box-shadow: 0 0 20px rgba(0,255,0,.6), inset 0 0 10px rgba(0,255,0,.4), 0 2px 0 #000;
     }
 }
 
 @keyframes glow {
     0% {
-		border-color: #393;
+		border-color: #6f6;
 		box-shadow: 0 0 5px rgba(0,255,0,.2), inset 0 0 5px rgba(0,255,0,.1), 0 2px 0 #000;
     }	
     100% {
-		border-color: #6f6;
+		border-color: #FFDE06;
 		box-shadow: 0 0 20px rgba(0,255,0,.6), inset 0 0 10px rgba(0,255,0,.4), 0 2px 0 #000;
     }
 }
 
+/****************************************************************************************************************/
 /*Estilos para el menu de navegacion*/
 #div_menu
 {
 	height: 50%;
+	margin: 0 0 0 0px;
+	padding: 0 0 0 0px;
+}
+
+li
+{
+	display: inline-block;
+	padding: 12px;
+}
+
+a{
+	font-family: starjedilines;
+	font-size: 22px;
+	color: #FFDE06;
+	font-weight: bold;
 }
