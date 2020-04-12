@@ -1,0 +1,21 @@
+<div >
+
+    <div class="columna">
+      <div class="columnas">
+          <img src="./../../../assets/images/el-despertar-de-la-fuerza-1575448990.jpg" id="imagen">
+      </div>
+      <div class="columnas">
+          <img src="./../../../assets/images/at_at.jpg" id="imagen">
+      </div>
+      <div class="columnas">
+          <img src="./../../../assets/images/principalFont.png" id="imagen">
+      </div>
+    </div>
+  
+    <div class="columna">
+     <div *ngFor="let pelicula of peliculas" class="columnas" >
+      <img [src]="pelicula.imagen" id="imagen" />
+      </div> 
+    </div>
+  
+  </div>
