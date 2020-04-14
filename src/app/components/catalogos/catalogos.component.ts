@@ -11,29 +11,8 @@ export class CatalogosComponent implements OnInit {
 
   constructor() { }
 
-  ngOnInit(): void {
-    this.peliculas = [
-      {
-        "id": "1",
-        "imagen": "./../assets/images/el-despertar-de-la-fuerza-1575448990.jpg",
-        "nombre": "Prueba 1"
-      },
-      {
-        "id": "2",
-        "imagen": "./assets/images/at_at.jpg",
-        "nombre": "Prueba 2"
-      },
-      {
-        "id": "3",
-        "imagen": "./../assets/images/el-despertar-de-la-fuerza-1575448990.jpg",
-        "nombre": "Prueba 2"
-      },
-      {
-        "id": "4",
-        "imagen": "./../assets/images/el-despertar-de-la-fuerza-1575448990.jpg",
-        "nombre": "Prueba 2"
-      }
-    ];
+  ngOnInit(){
+    
   }
 
 

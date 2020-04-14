@@ -14,7 +14,7 @@ import { FooterPrincipalComponent } from './components/footer-principal/footer-p
     HeaderPrincipalComponent,
     CatalogosComponent,
     EspecificacionesComponent,
-    FooterPrincipalComponent
+    FooterPrincipalComponent,
   ],
   imports: [
     BrowserModule,
