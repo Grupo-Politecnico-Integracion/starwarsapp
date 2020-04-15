@@ -6,14 +6,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./catalogos.component.css']
 })
 export class CatalogosComponent implements OnInit {
-  peliculas: any[] = []
- 
 
   constructor() { }
 
-  ngOnInit(){
-    
+  ngOnInit(): void {
   }
-
-
 }
