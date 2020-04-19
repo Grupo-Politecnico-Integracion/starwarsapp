@@ -4,8 +4,10 @@ import { CatalogosComponent } from './components/catalogos/catalogos.component';
 
 
 
+
 const routes: Routes = [
-  { path: 'films', component: CatalogosComponent },
+  { path: 'films', component: CatalogosComponent},
+
 ];
 
 @NgModule({
