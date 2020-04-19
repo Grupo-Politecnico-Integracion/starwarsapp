@@ -1,10 +1,10 @@
 .principal_header
 {
-	height: 30%;
-	width: 70%;
+	height: 100%;
+	width: 80%;
 	vertical-align: center;
-	margin-left: 15%;
-	margin-right: 15%;
+	margin-left: 9%;
+	margin-right: 9%;
 	margin-top: 3%;
 }
 
@@ -20,10 +20,9 @@
 {
 	display: table-cell;
 	vertical-align: middle;
-	width: 70%;
+	width: 80%;
 	margin: 0 0 0 0px;
 	padding: 0 0 0 0px;
-	border: 0px;
 }
 
 hr
@@ -63,7 +62,7 @@ hr
 #logo_principal
 {
 	width: 100%;
-	height: 90%;
+	height: 100%;
 	margin:0px;
 }
 
@@ -71,15 +70,16 @@ hr
 /*Estilos de la barra de consulta*/
 #div_search
 {
-	height: 50%;
+	height: 100	%;
 }
 
 .search_section
 {
 	background: transparent;
-	text-align: center;
+	text-align: right;
 	width: 100%;
 	height: 100%;
+	border: 0;
 }
 
 .search_section:before,
@@ -99,15 +99,15 @@ hr
 
 .search_section form {
 	background: transparent;
-	border: 0px solid transparent;
 	border-radius: 5px;
-	box-shadow: inset 0 0 0 1px #272727;
+	box-shadow: inset 0 0 0 0px #272727;
 	display: inline-block;
 	font-size: 0px;
 	position: relative;
 	z-index: 1;
 	width: 100%;
-	margin: 5px;
+	margin: 5 5 5 20px;
+	padding: 0 0 0 20px;
 }
 
 .search_section input {
@@ -251,6 +251,11 @@ hr
 		border-color: #FFDE06;
 		box-shadow: 0 0 20px rgba(0,255,0,.6), inset 0 0 10px rgba(0,255,0,.4), 0 2px 0 #000;
     }
+}
+
+.search_form
+{
+	background-color: transparent;
 }
 
 /****************************************************************************************************************/
