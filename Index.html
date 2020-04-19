@@ -4,18 +4,29 @@
     <meta charset="UFT-8">
 <meta Name= "Viewport" content="width=device-windth, user -scalable=no,initial - scale= 1.0, maximum-scalate=1.0, minium- scalete=1.0" >
 <title> Inicio </title>
-
+<base href="/">
 <!--<body style="background-color:black;">-->
     <body background="asrc/ssets/images/space.webp">
+        
 </body>
- <LINK rel="stylesheet" href="css/bootstrap.css">
+ <!--<LINK rel="stylesheet" href="css/bootstrap.min.css">-->
+    <LINK rel="stylesheet" href="css/bootstrap.min.css">   
+        
 </head>
 
 <body>
     <div class="container">
-        <div align="center"><img src="asrc/ssets/images/Star_Wars_Logo.png"width="300" height="150"></div>
+        
+        <div align="center"><img src="asrc/ssets/images/Star_Wars_Logo.png"width="500" height="250"></div>
+
+        <div>
+                ng-hi
+
+        </div>
 
 <!--<p> Contenido  .</p>-->
+
+<h1>pruebas  </h1>
 
 <!--<button class="btn btn-primary"></button>-->
    </div>
@@ -23,26 +34,9 @@
 <script src="js/jquery-3.5.0.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <!-- Compiled and minified Bootstrap CSS -->
-<!--agregamos el menu-->
 
-<!--<nav class="navbar navbar-light transparent">-->
-    <nav class="navbar navbar-inverse" style="background-color: #000000;">
-    <!--<nav class="navbar navbar-inverse">-->
-    <div class="container-fluid">
-      <div class="navbar-header">
-      </div>
-      <ul class="nav navbar-nav">
-        <li class="active"><a href="#">Films</a></li>
-        <li class="active"><a href="#">planets</a></li>
-        <li class="active"><a href="#">characters</a></li>
-        <li class="active"><a href="#">species</a></li>
-        <li class="active"><a href="#">vehicles</a></li>
-        <li class="active"><a href="#">Spaceships</a></li>
-      </ul>
-    </div>
-  </nav>
 
-<!--cierro menu-->
+
 <!-- agregamos el carrusel-->
 
 <div id="myCarousel" class="carousel slide" data-ride="carousel">
@@ -57,7 +51,7 @@
     <div class="carousel-inner">
         <div class="item active">
             <center>
-                <img src="asrc/ssets/images/image-1.jpg" >
+                <img src="asrc/ssets/images/image-1.jpg">
             </center>
         </div>
         <div class="item">
@@ -145,7 +139,6 @@
         <div class="item">
             <center>
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/x7nKsvvsSto" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                
             </center>
 
     </div>
@@ -175,17 +168,10 @@
         $("#myCarouselCustom").carousel("next");
     });
     </script>
-<h2 style="padding: 45px;"> </h2>
-
-<p align="center">
-        <img src="asrc/ssets/images/vader.jpg">
-</p>
-    
-
 
 <script type="text/javascript">
     $('.carousel').carousel({
-         interval: 3000,
+         interval: 2000,
          pause:false,
          wrap:true
     });
