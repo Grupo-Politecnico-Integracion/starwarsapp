@@ -3,6 +3,10 @@
 
 Proyecto desarrollado para la materia Front end politécnico Grancolombiano
 
+# Link explicación Proyecto Star Wars App
+
+https://www.youtube.com/watch?v=RHyPFFi7O60&feature=youtu.be
+
 ## Tener en cuenta
 
 La instalación de las dependencias Node Js [NodeJS](https://nodejs.org/es/).
