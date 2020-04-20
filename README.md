@@ -5,7 +5,7 @@ Proyecto desarrollado para la materia Front end politécnico Grancolombiano
 
 # Link explicación Proyecto Star Wars App
 
-https://www.youtube.com/watch?v=RHyPFFi7O60&feature=youtu.be
+https://www.youtube.com/watch?v=pOyha9GiMtI&feature=youtu.be
 
 ## Tener en cuenta
 
