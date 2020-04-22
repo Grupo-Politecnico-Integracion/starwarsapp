@@ -12,6 +12,7 @@ import { HeaderPrincipalComponent } from './components/header-principal/header-p
 import { CatalogosComponent } from './components/catalogos/catalogos.component';
 import { EspecificacionesComponent } from './especificaciones/especificaciones.component';
 import { FooterPrincipalComponent } from './components/footer-principal/footer-principal.component';
+import { CarouselComponent } from './components/carousel/carousel.component';
 
 @NgModule({
   declarations: [
@@ -20,6 +21,7 @@ import { FooterPrincipalComponent } from './components/footer-principal/footer-p
     CatalogosComponent,
     EspecificacionesComponent,
     FooterPrincipalComponent,
+    CarouselComponent,
   ],
   imports: [
     BrowserModule,
