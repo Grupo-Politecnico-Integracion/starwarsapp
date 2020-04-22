@@ -23,6 +23,7 @@ import { FooterPrincipalComponent } from './components/footer-principal/footer-p
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
     AppRoutingModule
   ],
   // Adiciono el servicio al array CMS 20.04.2020
