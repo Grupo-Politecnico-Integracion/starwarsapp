@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 
 // Adición de la dependencia para cliente HTTP CMS 20.04.2020
 import { HttpClientModule} from '@angular/common/http'; 
+
 // Importo el servicio CMS 20.04.2020
 import { StarwarsApiService } from './starwars-api.service';
 
