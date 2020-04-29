@@ -13,9 +13,7 @@ export class AppComponent {
   // Implementación de la appi CMS 20.04.2020
   stars: any[] = [];
 
-  constructor(
-    protected userService: StarwarsApiService
-  ) {
+  constructor(protected userService: StarwarsApiService) {
   }
 
   ngOnInit() {
