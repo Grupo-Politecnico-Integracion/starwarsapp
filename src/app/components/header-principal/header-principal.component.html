@@ -7,8 +7,8 @@
 	<div class="div_header" id="div_search_menu">
 		<div id="div_search">
 			<section class="search_section">
-				<form action="" method="" accept-charset="utf-8" class="search_form">
-					<input type="search" name="input_search" placeholder="Enter the film or year to find">
+				<form class="search_form" >
+					<input type="search" class="form-control" name="input_search" placeholder="Enter the film or year to find" autocomplete="off" [(ngModel)]="filterPost">
 					<button type="submit">Find</button>
 				</form>
 			</section>	
@@ -17,11 +17,11 @@
 			<nav>
 				<ul>
 					<li><a [routerLink]="['films']">Films</a></li>
-					<li><a href="#prueba">Planets</a></li>
-					<li><a href="#prueba">Characters</a></li>
-					<li><a href="#prueba">Species</a></li>
-					<li><a href="#prueba">Vehicles</a></li>
-					<li><a href="#prueba">Spaceships</a></li>
+					<li><a [routerLink]="['planets']">Planets</a></li>
+					<li><a [routerLink]="['characters']">Characters</a></li>
+					<li><a [routerLink]="['species']">Species</a></li>
+					<li><a [routerLink]="['vehicles']">Vehicles</a></li>
+					<li><a [routerLink]="['spaceships']">Spaceships</a></li>
 				</ul>
 			</nav>
 		</div>
