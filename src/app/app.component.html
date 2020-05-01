@@ -7,9 +7,18 @@
 <!--Add CMS 18.04.2020-->
 <app-header-principal></app-header-principal>
 <router-outlet></router-outlet>
-<!-- <app-especificaciones></app-especificaciones> -->
+
+<div *ngFor='let star of stars'>
+        
+        
+        <h5 style="color: honeydew;" >{{ star.people | uppercase }}</h5>
+         <h5 style="color: honeydew;" >{{ star.height | uppercase }}</h5>
+        <h3 style="color: honeydew;" >{{ star.skin_color | uppercase }}</h3>
+        <h3 style="color: honeydew;" >{{ star.name | uppercase }}</h3>
+        
+    </div> 
+
+<!-- <app-especificaciones></app-especificaciones>-->
 
 <app-footer-principal></app-footer-principal>
-
-
 

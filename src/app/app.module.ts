@@ -1,6 +1,12 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
+// Adición de la dependencia para cliente HTTP CMS 20.04.2020
+import { HttpClientModule} from '@angular/common/http'; 
+
+// Importo el servicio CMS 20.04.2020
+import { StarwarsApiService } from './starwars-api.service';
+
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderPrincipalComponent } from './components/header-principal/header-principal.component';
@@ -20,9 +26,11 @@ import { CarouselComponent } from './components/carousel/carousel.component';
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
     AppRoutingModule
   ],
-  providers: [],
+  // Adiciono el servicio al array CMS 20.04.2020
+  providers: [StarwarsApiService], 
   bootstrap: [AppComponent]
 })
 export class AppModule { }
