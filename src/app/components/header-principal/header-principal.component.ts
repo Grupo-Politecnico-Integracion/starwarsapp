@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { StarwarsApiService } from './../../starwars-api.service';
+import { films } from './../../models/film';
 
 @Component({
   selector: 'app-header-principal',
@@ -7,19 +8,21 @@ import { StarwarsApiService } from './../../starwars-api.service';
   styleUrls: ['./header-principal.component.css']
 })
 export class HeaderPrincipalComponent implements OnInit {
-  
+
+	inputSearch: films;
+
   constructor(private dataApiService: StarwarsApiService) { 
   }
 
-  filterPost = "";
-
   ngOnInit(): void {
-
+  	
   }
 
-  clickCaptureData(){
-
-  		alert('funciona');
+  search(){
+  	this.dataApiService.getSearchData(this.inputSearch);
   }
+
+
+  
 
 }
