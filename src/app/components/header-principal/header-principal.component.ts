@@ -43,13 +43,6 @@ export class HeaderPrincipalComponent implements OnInit {
   }
 
   getUrl () {
-    // for (let index = 0; index < this.menu.length; index++) {
-    //   if () {
-        
-    //   }
-      
-    // }
-    
     return this.url;
   }
 
