@@ -16,6 +16,8 @@ export class AppComponent {
   constructor(
     protected userService: StarwarsApiService
   ) {
+   
+   
   }
 
   ngOnInit() {
@@ -29,4 +31,22 @@ export class AppComponent {
       }
     );
   }
+
+  // cargarStars(){
+
+  //    // Declaración de interfaces CMS 01.05.2020
+  //    interface Titulo{
+  //     id: number;
+  //     pelicula: string;
+  //    }
+  
+  // var titulos: Titulo[] = []
+  // var tit: string;
+
+  // this.stars.forEach(tt => {
+  //   tit = tt.title;
+  // });
+
+  // }
+  
 }
