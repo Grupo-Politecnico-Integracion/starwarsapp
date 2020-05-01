@@ -9,7 +9,7 @@ export class HeaderPrincipalComponent implements OnInit {
 
 //LorenaF.lista de ids para las opciones del menù 28.04.2020
   menu: any[] = [];
-  url = 'http://swapi.py4e.com/api/films/';
+  url = 'http://swapi.py4e.com/api/films/?results=100';
   constructor() { }
 
   ngOnInit(): void {
@@ -17,7 +17,7 @@ export class HeaderPrincipalComponent implements OnInit {
     this.menu = [
       {
         "id": "1",//Peliculas
-        "url": "",
+        "url": "http://swapi.py4e.com/api/films/?results=100",
       },
       {
         "id": "2",//Planetas
