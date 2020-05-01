@@ -14,9 +14,12 @@ export class AppComponent {
   url: string; // Variable URL que consulto de la lista de ids del menu LorenaF 28.04.2020
   // Implementación de la appi CMS 20.04.2020
   stars: any[] = [];
-  
-  constructor(protected userService: StarwarsApiService) {
-    
+
+  constructor(
+    protected userService: StarwarsApiService
+  ) {
+   
+   
   }
 
   ngOnInit() {
@@ -33,5 +36,27 @@ export class AppComponent {
     );
   }
 
+  cargarStars(){
 
+     // Declaración de interfaces CMS 01.05.2020
+     interface Titulo{
+      id: number;
+      pelicula: string;
+     }
+  
+  var titulos: Titulo[] = []
+  var idTitulo: number = 0;
+
+  this.stars.forEach(titulo => {
+
+    titulos.push({
+    id: idTitulo,
+    pelicula: titulo.title
+    });
+   
+    idTitulo++;
+  });
+
+  }
+  
 }
