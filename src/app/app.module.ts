@@ -15,6 +15,10 @@ import { EspecificacionesComponent } from './especificaciones/especificaciones.c
 import { FooterPrincipalComponent } from './components/footer-principal/footer-principal.component';
 import { CarouselComponent } from './components/carousel/carousel.component';
 
+// Importo libreria para el manejo de los formularios a través del ngModel en un imput CMS 27.04.2020
+import {FormsModule} from '@angular/forms'
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -27,7 +31,9 @@ import { CarouselComponent } from './components/carousel/carousel.component';
   imports: [
     BrowserModule,
     HttpClientModule,
-    AppRoutingModule
+    AppRoutingModule,
+    // Para manejo de formularios CMS 27.04.2020
+    FormsModule
   ],
   // Adiciono el servicio al array CMS 20.04.2020
   providers: [StarwarsApiService], 
