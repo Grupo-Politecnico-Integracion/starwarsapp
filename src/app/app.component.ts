@@ -43,15 +43,20 @@ export class AppComponent {
   var titulos: Titulo[] = []
   var idTitulo: number = 0;
 
+  // Paso los valores de stars a un arreglo temporal titulo CMS 01.05.2020
   this.stars.forEach(titulo => {
 
+    // Lleno el arreglo titulos CMS 01.05.2020
     titulos.push({
     id: idTitulo,
     pelicula: titulo.title
-    });
+    }
+    );
    
     idTitulo++;
   });
+
+  var titulo5: string = this.stars[5]["title"];
 
   }
   
