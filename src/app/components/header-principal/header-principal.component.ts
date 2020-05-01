@@ -9,7 +9,7 @@ export class HeaderPrincipalComponent implements OnInit {
 
 //LorenaF.lista de ids para las opciones del menù 28.04.2020
   menu: any[] = [];
-  url = 'http://swapi.py4e.com/api/people/?results=100';
+  url = 'http://swapi.py4e.com/api/films/';
   constructor() { }
 
   ngOnInit(): void {

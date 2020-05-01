@@ -21,8 +21,8 @@ export class AppComponent {
 
   ngOnInit() {
     let header = new HeaderPrincipalComponent();//Creo objeto de la clase de header-component
-    this.url = header.getUrl();// Traigo URL de la lista de la clase de header-component
-    this.userService.getStarwarsApi(this.url)//Utilizo la URL en el metodo que consume la API
+    this.url = header.getUrl();// Traigo URL de la lista por medio del método getURL() de la clase de header-component
+    this.userService.getStarwarsApi(this.url)//Utilizo la URL en el método que consume la API
     .subscribe(
       (data) => { // Success
         this.stars = data['results'];
