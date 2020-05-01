@@ -32,21 +32,27 @@ export class AppComponent {
     );
   }
 
-  // cargarStars(){
+  cargarStars(){
 
-  //    // Declaración de interfaces CMS 01.05.2020
-  //    interface Titulo{
-  //     id: number;
-  //     pelicula: string;
-  //    }
+     // Declaración de interfaces CMS 01.05.2020
+     interface Titulo{
+      id: number;
+      pelicula: string;
+     }
   
-  // var titulos: Titulo[] = []
-  // var tit: string;
+  var titulos: Titulo[] = []
+  var idTitulo: number = 0;
 
-  // this.stars.forEach(tt => {
-  //   tit = tt.title;
-  // });
+  this.stars.forEach(titulo => {
 
-  // }
+    titulos.push({
+    id: idTitulo,
+    pelicula: titulo.title
+    });
+   
+    idTitulo++;
+  });
+
+  }
   
 }
