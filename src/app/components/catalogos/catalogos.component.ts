@@ -26,14 +26,20 @@ export class CatalogosComponent implements OnInit {
 
   cargarStars() {
     var idTitulo: number = 0;
+    var nombre:string;
     this.datos = []
 
     this.listas.forEach(titulo => {
-
+      if (titulo.title == null) {
+        nombre = titulo.name
+      } else {
+        nombre = titulo.title
+      }
       //Lleno la lista con id, concateno variables para la imagen y los datos que retorna el API
       this.datos.push({
         id: idTitulo,
-        imagen: idTitulo + titulo.title + '.jpg',
+        imagen: idTitulo + nombre + '.jpg',
+        nombre:nombre,
         titulo
       });
 
