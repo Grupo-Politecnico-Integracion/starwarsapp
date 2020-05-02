@@ -25,4 +25,3 @@ export class StarwarsApiService {
   	console.log(this.infoLog);
   }
 }
-}
