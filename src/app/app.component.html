@@ -1,28 +1,4 @@
-<!--Comentado CMS 18.04.2020-->
-        <!--<app-header-principal></app-header-principal> "Paulo"
-        <app-especificaciones></app-especificaciones> "César"
-        <app-footer-principal></app-footer-principal> "Paulo"-->
-<!--Fin Comentado CMS 18.04.2020-->
-
-<!--Add CMS 18.04.2020-->
 <app-header-principal></app-header-principal>
 <router-outlet></router-outlet>
-
-<div *ngFor='let star of stars'>
-        
-      <h2 style="color: honeydew;" >{{ star.name | uppercase }}</h2> 
-        <h2 style="color: honeydew;" >{{ star }}</h2>
-        
-        <!-- <h5 style="color: honeydew;" >{{ star.nombre | uppercase }}</h5>
-         <h5 style="color: honeydew;" >{{ star.height | uppercase }}</h5>
-        <h3 style="color: honeydew;" >{{ star.skin_color | uppercase }}</h3>
-         -->
-    </div> 
-
-<!-- <app-especificaciones></app-especificaciones>-->
-
-
-<button (click)="cargarStars()">Carga</button>
-
 <app-footer-principal></app-footer-principal>
 
