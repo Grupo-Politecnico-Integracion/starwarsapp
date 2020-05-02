@@ -5,9 +5,9 @@
     <div *ngFor="let lista of datos">
       <!-- sección de una sola imagen CMS 18.04.2020 -->
       <a href="#" data-toggle="modal" data-target="#myModal">
-        <div class="col-md-3 col-sm-4 col-xs-6">
+        <div class="col-md-3 col-sm-4 col-xs-6 clearfix">
           <img class="img-responsive" src="./assets/images/catalogo/{{lista.imagen}}" />
-          <h1>{{lista.nombre}}</h1>
+          <h1 class="letra">{{lista.nombre}}</h1>
         </div>
       </a>
 

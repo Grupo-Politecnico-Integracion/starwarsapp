@@ -9,3 +9,18 @@ img:hover {
   filter: gray; /* IE6-9 */
   -webkit-filter: grayscale(1); /* Google Chrome, Safari 6+ & Opera 15+ */
 }
+
+.letra{
+	font-family: starjedilines;
+    /* background-image: url(https://media.giphy.com/media/l3q2vQ6rlZutXsYN2/giphy.gif);*/
+    background-image: url(https://media.giphy.com/media/l3q2vQ6rlZutXsYN2/giphy.gif);
+	background-size: cover;
+	color: transparent;
+	-moz-background-clip: text;
+	-webkit-background-clip: text;
+	text-transform: capitalize;
+	font-size: 25px;
+	line-height: .75;
+	margin: 10px 0;
+	font-weight: bold;
+}
