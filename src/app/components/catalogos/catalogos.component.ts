@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 //Importo la libreria para traer la lista de datos
 import { AppComponent } from './../../app.component';
+import { HeaderPrincipalComponent } from '../header-principal/header-principal.component';
 
 @Component({
   selector: 'app-catalogos',
@@ -14,11 +15,12 @@ export class CatalogosComponent implements OnInit {
   datos: any[] = [];//Lista para datos del api con id
 
   //Variable del tipo app.component para traer los datos
-  constructor(protected lista: AppComponent) { }
+  constructor(protected imagenes: AppComponent) { }
 
 
   ngOnInit(): void {
-    this.listas = this.lista.stars//Traer datos de app.component y se lo asigno al array global listas
+    
+    this.listas = this.imagenes.stars//Traer datos de app.component y se lo asigno al array global listas
 
   }
 

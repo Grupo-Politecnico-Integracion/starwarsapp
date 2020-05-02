@@ -15,12 +15,8 @@ export class AppComponent {
   url: string; // Variable URL que consulto de la lista de ids del menu LorenaF 28.04.2020
   // Implementación de la appi CMS 20.04.2020
   stars: any[] = [];
-  // datos: any[] = [];//Lista para datos del api con id
 
-  
-  constructor(protected userService: StarwarsApiService) {
-    
-  }
+  constructor(protected userService: StarwarsApiService) {}
 
   ngOnInit() {
     let header = new HeaderPrincipalComponent();//Creo objeto de la clase de header-component
