@@ -10,19 +10,14 @@
             "request": "launch",
             "reAttach": true,
             "name": "Launch localhost",
-            "url": "httpS://localhost:4200",
+            "url": "http://localhost:4200",
             "webRoot": "${workspaceFolder}",
             "pathMappings": [
                 {
                     "url": "webpack:///src",
                     "path": "${workspaceFolder}/src"
                 }
-            ],
-            "name": "Launch Chrome",
-            "request": "launch",
-            "type": "pwa-chrome",
-            "url": "http://localhost:4200",
-            "webRoot": "${workspaceFolder}"
+            ]
         }
 
       
