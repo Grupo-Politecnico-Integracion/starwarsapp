@@ -1,72 +1,21 @@
+<button (click)="cargarStars()">Carga</button>
 <div class="container">
-
-  <!-- Código comentado por manejo de rutas muy largas para imagenes ./../../../ CMS 18.04.2020
-    <div class="row">
-    <a href="#"><div class="col-md-3 col-sm-4 col-xs-6"><img class="img-responsive" src="./../../../assets/images/peliculas/0A New Hope.jpg" /></div></a>
-    <a href="#"><div class="col-md-3 col-sm-4 col-xs-6"><img class="img-responsive" src="./../../../assets/images/peliculas/1The Empire Strikes Back.jpg" /></div></a>
-    <a href="#"><div class="col-md-3 col-sm-4 col-xs-6"><img class="img-responsive" src="./../../../assets/images/peliculas/2Return of the Jedi.jpg" /></div></a>
-    <a href="#"><div class="col-md-3 col-sm-4 col-xs-6"><img class="img-responsive" src="./../../../assets/images/peliculas/3The Phantom Menace.jpg" /></div></a>
-    </div>
-    <div class="row">
-    <a href="#"><div class="col-md-3 col-sm-4 col-xs-6"><img class="img-responsive" src="./../../../assets/images/peliculas/4Attack of the Clones.jpg" /></div></a>      
-    <a href="#"><div class="col-md-3 col-sm-4 col-xs-6"><img class="img-responsive" src="./../../../assets/images/peliculas/5Revenge of the Sith.jpg" /></div></a>
-    <a href="#"><div class="col-md-3 col-sm-4 col-xs-6"><img class="img-responsive" src="./../../../assets/images/peliculas/6The Force Awakens.jpg" /></div></a>
-   Lorena F Fin Añadido 18.04.2020 Imagenes de las peliculas que devuelve la API-->
-  <!-- </div>--> 
-
-
-  
-   <!-- Add etiqueta para abrir venta Modal y ajuste de rutas de imagenes CMS 18.04.2020 -->
+  <!-- Add etiqueta para abrir venta Modal y ajuste de rutas de imagenes CMS 18.04.2020 -->
   <div class="row">
-    <!-- sección de una sola imagen CMS 18.04.2020 -->
-    <a href="#"  data-toggle="modal" data-target="#myModal">
-      <div class="col-md-3 col-sm-4 col-xs-6">
-        <img class="img-responsive" src="./assets/images/peliculas/0A New Hope.jpg" />
-      </div>
-    </a>
-   <!-- Fin sección de una sola imagen CMS 18.04.2020 -->
-    <a href="#">
-      <div class="col-md-3 col-sm-4 col-xs-6">
-        <img class="img-responsive" src="./assets/images/peliculas/1The Empire Strikes Back.jpg" />
-      </div>
-    </a>
-    <a href="#">
-      <div class="col-md-3 col-sm-4 col-xs-6">
-        <img class="img-responsive" src="./assets/images/peliculas/2Return of the Jedi.jpg" />
-      </div>
-    </a>
-    <a href="#">
-      <div class="col-md-3 col-sm-4 col-xs-6">
-        <img class="img-responsive" src="./assets/images/peliculas/3The Phantom Menace.jpg" />
-      </div>
-    </a>
+    <div *ngFor="let lista of datos">
+      <!-- sección de una sola imagen CMS 18.04.2020 -->
+      <a href="#" data-toggle="modal" data-target="#myModal">
+        <div class="col-md-3 col-sm-4 col-xs-6">
+          <img class="img-responsive" src="./assets/images/catalogo/{{lista.imagen}}" />
+          <h1>{{lista.nombre}}</h1>
+        </div>
+      </a>
+
+      <!-- Fin sección de una sola imagen CMS 18.04.2020 -->
     </div>
-    <div class="row">
-    <a href="#">
-      <div class="col-md-3 col-sm-4 col-xs-6">
-        <img class="img-responsive" src="./assets/images/peliculas/4Attack of the Clones.jpg" />
-      </div>
-    </a>      
-    <a href="#">
-      <div class="col-md-3 col-sm-4 col-xs-6">
-        <img class="img-responsive" src="./assets/images/peliculas/5Revenge of the Sith.jpg" />
-      </div>
-    </a>
-    <a href="#">
-      <div class="col-md-3 col-sm-4 col-xs-6">
-        <img class="img-responsive" src="./assets/images/peliculas/6The Force Awakens.jpg" />
-      </div>
-    </a>
   </div>
-
-
 </div>
-
 
 <!-- ADD CMS 18.04.2020 Ventana modal-->
 <app-especificaciones></app-especificaciones>
 <!-- Fin ADD CMS 18.04.2020 Ventana modal-->
-
-
-
-

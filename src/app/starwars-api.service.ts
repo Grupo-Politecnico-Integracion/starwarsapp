@@ -4,7 +4,6 @@ import { Observable, throwError } from 'rxjs';
 import { catchError, retry } from 'rxjs/operators';
 import { films } from './models/film';
 
-
 @Injectable()
 
 export class StarwarsApiService {
@@ -15,8 +14,10 @@ export class StarwarsApiService {
   constructor(private http: HttpClient) { }
 
   // Metodo que retorna la api CMS 20.04.2020
-  getStarwarsApi() {
-    return this.http.get('http://swapi.py4e.com/api/people/?results=100');
+  getStarwarsApi(url: string) {
+    
+    return this.http.get(url);
+
   }
   getSearchData(parameter: films){
   	const url_api = 'https://swapi.py4e.com/api/people/?search=${parameter}';
