@@ -18,8 +18,6 @@ export class StarwarsApiService {
   getStarwarsApi() {
     return this.http.get('http://swapi.py4e.com/api/people/?results=100');
   }
-
-  //Metodo consulta
   getSearchData(parameter: films){
   	const url_api = 'https://swapi.py4e.com/api/people/?search=${parameter}';
   	//return this.http.get(url_api);
@@ -27,5 +25,4 @@ export class StarwarsApiService {
   	console.log(this.infoLog);
   }
 }
-
-
+}
