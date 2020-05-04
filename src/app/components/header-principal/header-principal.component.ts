@@ -13,33 +13,24 @@ export class HeaderPrincipalComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-    //LorenaF.lleno lista de ids para las opciones del menù 28.04.2020
-    this.menu = [
-      {
-        "id": "1",//Peliculas
-        "url": "http://swapi.py4e.com/api/films/?results=100",
-      },
-      {
-        "id": "2",//Planetas
-        "url": "",
-      },
-      {
-        "id": "3",//Personajes
-        "url": "http://swapi.py4e.com/api/people/?results=100",
-      },
-      {
-        "id": "4",//Especies
-        "url": "",
-      },
-      {
-        "id": "5",//Vehiculos
-        "url": "",
-      },
-      {
-        "id": "6",//Naves
-        "url": "",
-      }
-    ];
+  }
+
+  getId(id){
+    switch (id) {
+      case "1":
+        this.url = 'http://swapi.py4e.com/api/films/?results=100';
+        break;
+        case "2":
+          this.url = 'http://swapi.py4e.com/api/planets/?results=100';
+          break;
+          case "3":
+            this.url = 'http://swapi.py4e.com/api/characters/?results=100';
+            break;
+    
+      default:
+        break;
+    }
+    
   }
 
   getUrl () {

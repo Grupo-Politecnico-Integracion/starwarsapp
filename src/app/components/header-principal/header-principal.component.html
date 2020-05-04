@@ -17,12 +17,12 @@
 			<nav>
 				<ul>
  		<!-- Añadido 28.04.2020 Direccionar a la pagina de catalogos LorenaF.-->
-					<li><a [routerLink]="['Catalogo']" id="1">Films</a></li>
-					<li><a [routerLink]="['Catalogo']" id="2">Planets</a></li>
-					<li><a [routerLink]="['Catalogo']" id="3">Characters</a></li>
-					<li><a [routerLink]="['Catalogo']" id="4">Species</a></li>
-					<li><a [routerLink]="['Catalogo']" id="5">Vehicles</a></li>
-					<li><a [routerLink]="['Catalogo']" id="6">Spaceships</a></li>
+		 <li><a [routerLink]="['Catalogo']" id="1" (click)="getId($event.target.id)">Films</a></li>
+		 <li><a [routerLink]="['Catalogo']" id="2" (click)="getId($event.target.id)">Planets</a></li>
+		 <li><a [routerLink]="['Catalogo']" id="3" (click)="getId($event.target.id)">Characters</a></li>
+		 <li><a [routerLink]="['Catalogo']" id="4" (click)="getId($event.target.id)">Species</a></li>
+		 <li><a [routerLink]="['Catalogo']" id="5" (click)="getId($event.target.id)">Vehicles</a></li>
+		 <li><a [routerLink]="['Catalogo']" id="6" (click)="getId($event.target.id)">Spaceships</a></li>
 		<!--Fin Añadido 28.04.2020 Direccionar a la pagina de catalogos LorenaF.-->
 				</ul>
 			</nav>
