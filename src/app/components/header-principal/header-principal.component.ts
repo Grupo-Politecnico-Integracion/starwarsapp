@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { StarwarsApiService } from './../../starwars-api.service';
-import { films } from './../../models/film';
 
 @Component({
   selector: 'app-header-principal',
@@ -11,8 +10,9 @@ export class HeaderPrincipalComponent implements OnInit {
 
   menu: any[] = [];//LorenaF.lista de ids para las opciones del menù 28.04.2020
   url = 'http://swapi.py4e.com/api/films/?results=100';
+  filter;
 
-  constructor() { }
+  constructor(private dataApiService: StarwarsApiService) { }
 
   ngOnInit(): void {
     //LorenaF.lleno lista de ids para las opciones del menù 28.04.2020
@@ -23,7 +23,7 @@ export class HeaderPrincipalComponent implements OnInit {
       },
       {
         "id": "2",//Planetas
-        "url": "",
+        "url": "http://swapi.py4e.com/api/planets/?results=100",
       },
       {
         "id": "3",//Personajes
@@ -31,20 +31,24 @@ export class HeaderPrincipalComponent implements OnInit {
       },
       {
         "id": "4",//Especies
-        "url": "",
+        "url": "http://swapi.py4e.com/api/species/?results=100",
       },
       {
         "id": "5",//Vehiculos
-        "url": "",
+        "url": "http://swapi.py4e.com/api/vehicles/?results=100",
       },
       {
         "id": "6",//Naves
-        "url": "",
+        "url": "http://swapi.py4e.com/api/starships/?results=100",
       }
     ];
   }
 
-  getUrl () {
+  getSearchData(filter){
+    this.dataApiService.getSearch(this.filter); 
+  }
+
+  getUrl() {
     return this.url;
   }
 }

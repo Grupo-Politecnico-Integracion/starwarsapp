@@ -10,18 +10,14 @@ import { HeaderPrincipalComponent } from '../header-principal/header-principal.c
 })
 export class CatalogosComponent implements OnInit {
 
-
   listas: any[] = [];//Creo el arreglo para traer los datos del app.component
   datos: any[] = [];//Lista para datos del api con id
 
   //Variable del tipo app.component para traer los datos
   constructor(protected imagenes: AppComponent) { }
 
-
-  ngOnInit(): void {
-    
-    this.listas = this.imagenes.stars//Traer datos de app.component y se lo asigno al array global listas
-
+  ngOnInit(): void { 
+    this.listas = this.imagenes.stars//Traer datos de app.component y se lo asigno al array global listas|
   }
 
   cargarStars() {
@@ -45,6 +41,5 @@ export class CatalogosComponent implements OnInit {
 
       idTitulo++;
     });
-
   }
 }

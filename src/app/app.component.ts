@@ -15,11 +15,12 @@ export class AppComponent {
   url: string; // Variable URL que consulto de la lista de ids del menu LorenaF 28.04.2020
   // Implementación de la appi CMS 20.04.2020
   stars: any[] = [];
+  prueba;
 
   constructor(protected userService: StarwarsApiService) {}
 
   ngOnInit() {
-    let header = new HeaderPrincipalComponent();//Creo objeto de la clase de header-component
+    let header = new HeaderPrincipalComponent(this.prueba);//Creo objeto de la clase de header-component
     this.url = header.getUrl();// Traigo URL de la lista por medio del método getURL() de la clase de header-component
     this.userService.getStarwarsApi(this.url)//Utilizo la URL en el método que consume la API
     .subscribe(

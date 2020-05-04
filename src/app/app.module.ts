@@ -7,8 +7,6 @@ import { HttpClientModule} from '@angular/common/http';
 // Importo el servicio CMS 20.04.2020
 import { StarwarsApiService } from './starwars-api.service';
 
-import {FormsModule} from '@angular/forms';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderPrincipalComponent } from './components/header-principal/header-principal.component';
