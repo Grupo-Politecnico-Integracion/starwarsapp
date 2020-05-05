@@ -24,7 +24,7 @@ export class CatalogosComponent implements OnInit {
 
   }
 
-  cargarStars() {
+  cargarStars1() {
     var idTitulo: number = 0;
     var nombre:string;
     this.datos = []
