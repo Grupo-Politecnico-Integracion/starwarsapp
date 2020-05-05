@@ -7,9 +7,34 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderPrincipalComponent implements OnInit {
 
+  menu: any[] = [];//LorenaF.lista de ids para las opciones del menù 28.04.2020
+  url = 'http://swapi.py4e.com/api/planets/?results=100';
+
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  getId(id){
+    switch (id) {
+      case "1":
+        this.url = 'http://swapi.py4e.com/api/films/?results=100';
+        break;
+        case "2":
+          this.url = 'http://swapi.py4e.com/api/planets/?results=100';
+          break;
+          case "3":
+            this.url = 'http://swapi.py4e.com/api/characters/?results=100';
+            break;
+    
+      default:
+        break;
+    }
+    
+  }
+
+  getUrl () {
+    return this.url;
   }
 
 }

@@ -6,7 +6,7 @@ import { CarouselComponent } from './components/carousel/carousel.component';
 
 const routes: Routes = [
   { path: '', component: CarouselComponent},
-  { path: 'films', component: CatalogosComponent},
+  { path: 'Catalogo', component: CatalogosComponent},
   
 
 ];
