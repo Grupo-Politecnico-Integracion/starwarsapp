@@ -26,6 +26,12 @@ export class HeaderPrincipalComponent implements OnInit {
           case "3":
             this.url = 'http://swapi.py4e.com/api/characters/?results=100';
             break;
+           case "4":
+            this.url = 'http://swapi.py4e.com/api/vehicles/?results=100';
+            break;
+            case "5":
+            this.url = 'http://swapi.py4e.com/api/spaceships/?results=100';
+            break;
     
       default:
         break;
