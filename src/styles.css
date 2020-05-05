@@ -1,6 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
 body {
 	background-image: url("https://images7.alphacoders.com/805/805197.jpg");
+	/* background-image: url(https://media.giphy.com/media/14u2ZI1XhkoZCU/giphy.gif); */
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -8,6 +9,7 @@ body {
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	text-align: center;
+	
 }
 
 *
